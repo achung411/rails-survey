@@ -39,3 +39,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'hirb'
 gem 'rails-footnotes', '>= 4.0.0', '<5'
+gem 'twitter-bootstrap-rails', '~> 2.2.8'

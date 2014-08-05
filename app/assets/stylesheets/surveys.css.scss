@@ -1,0 +1,39 @@
+body {
+	padding: 10px;
+}
+
+	form {
+		width: 60%
+	}
+
+		textarea {
+			rows: 5;
+			height: 60px;
+			background-color: purple;
+		}
+
+	h3 {
+		text-decoration: underline;
+	}
+
+	header {
+		background-color: lightgreen;
+		width: 400px;
+		border: 1px silver solid;
+		padding: 10px;
+		margin: 10px 0;
+	}
+
+	#left, #right {
+		display: inline-block;
+		width: 150px;
+		padding: 0 0 0 20px;
+		height: 200px;
+	}
+
+	main {
+		width: 400px;
+		border: 1px black solid;
+		padding: 10px;
+		height: 320px;
+	}

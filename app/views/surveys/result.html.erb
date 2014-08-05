@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form Result</title>
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body>
+	<header>Thanks for submitting this form!  You have submitted this form <%=session[:counter]%> times now.</header>
+	<main>
+		<h3>Submitted Information</h3>
+		<div id="left">
+			<p>Name:</p>
+			<p>Dojo Location:</p>
+			<p>Favorite Language:</p>
+			<p>Comment:</p>
+		</div>
+		<div id="right">
+			<p><%=session[:name]%></p>
+			<p><%=session[:location]%></p>
+			<p><%=session[:language]%></p>
+			<p><%=session[:comment]%></p>
+			<p><%=session[:id]%></p>
+		</div>
+		<div role="form">
+			<form action="/" method="post" class="col-sm-12">
+				<input type="hidden" name="authenticity_token" value=<%=form_authenticity_token%>>
+				<button type="submit" class="btn btn-primary col-sm-offset-9">Go Back</button>
+			</form>
+		</div>
+	</main>
+</body>
+</html>

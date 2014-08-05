@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+
+  root 'surveys#index'
+
+  post '/', to: 'surveys#index'
+
+  post '/surveys', to: 'surveys#create'
+
+  get '/surveys/result', to: 'surveys#result'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
